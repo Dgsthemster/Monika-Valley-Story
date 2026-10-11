@@ -41,8 +41,6 @@ Monika Valley Story is a Content Patcher mod that brings Monika — the beloved 
 
 **语言 / Languages:** 简体中文 / English (for now)
 
-下载 / Download: [Nexus Mods](https://www.nexusmods.com/stardewvalley/mods/50924)
-
 ## 声明 / Disclaimer
 
 **中文**
