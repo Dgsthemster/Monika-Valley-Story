@@ -1,0 +1,12 @@
+# workspace-only junk (defensive)
+原版文件/
+_audit/
+备份/
+.dsh/
+.opencode/
+node_modules/
+__pycache__/
+*.bak
+*.bak_*
+Thumbs.db
+desktop.ini

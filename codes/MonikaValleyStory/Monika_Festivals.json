@@ -1,0 +1,503 @@
+{
+    "Changes": [
+      //复活节
+      {//第一年
+            "LogName": "Monika Egg Festival Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 36 65 3",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "MainEvent_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 26 63 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//第二年
+            "LogName": "Monika Egg Festival Position_y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 33 58 3",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "MainEvent_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 34 64 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//对话
+      "LogName": "Monika Egg Festival Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "MonikaDDLC":"{{i18n:Monika.Egg.y1}}",
+        "MonikaDDLC_y2":"{{i18n:Monika.Egg.y2}}",
+        "MonikaDDLC_spouse":"{{i18n:Monika.Egg.spouse.y1}}",
+        "MonikaDDLC_spouse_y2":"{{i18n:Monika.Egg.spouse.y2}}"
+      }
+    },
+
+
+
+    //花舞节
+    {//第一年
+            "LogName": "Monika Flower Dance Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 4 30 1",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "MainEvent_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 7 24 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//第二年
+            "LogName": "Monika Flower Dance Position_y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 47 39 2",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "MainEvent_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 7 24 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//对话
+      "LogName": "Monika Flower Dance Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "MonikaDDLC":"{{i18n:Monika.Flower.y1}}",
+        "MonikaDDLC_y2":"{{i18n:Monika.Flower.y2}}",
+        "MonikaDDLC_spouse_y2":"{{i18n:Monika.Flower.spouse.y2}}"
+      }
+    },
+
+
+
+    {//花舞节编舞
+      "LogName": "Monika Flower Dance Choreography",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "When": { "Hearts:MonikaDDLC": "0, 1, 2, 3" },
+      "TextOperations": [
+        {
+          "Operation": "ReplaceDelimited",
+          "Target": [
+            "Entries",
+            "mainEvent"
+          ],
+          "Delimiter": "/",
+          "Search": "animate Guys false true 600 44 45",
+          "Value": "animate Guys false true 600 44 45/animate MonikaDDLC false true 600 43 41 43 42"
+        },
+        {
+          "Operation": "ReplaceDelimited",
+          "Target": [
+            "Entries",
+            "mainEvent"
+          ],
+          "Delimiter": "/",
+          "Search": "animate Guys false true 300 46 47",
+          "Value": "animate Guys false true 300 46 47/animate MonikaDDLC false true 600 46 47"
+        }
+      ]
+    },
+    {//花舞节收尾定格
+      "LogName": "Monika Flower Dance End Pose",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "ReplaceDelimited",
+          "Target": [
+            "Entries",
+            "mainEvent"
+          ],
+          "Delimiter": "/",
+          "Search": "stopAnimation Guys",
+          "Value": "stopAnimation Guys/stopAnimation MonikaDDLC/showFrame MonikaDDLC 46"
+        }
+      ]
+    },
+    //夏威夷宴会
+      {//第一年
+            "LogName": "Monika Luau Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 41 24 2",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "MainEvent_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 32 19 0",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//第二年
+            "LogName": "Monika Luau Position_y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 25 13 2",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "MainEvent_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 23 18 0",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//对话
+      "LogName": "Monika Luau Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "MonikaDDLC":"{{i18n:Monika.Luau.y1}}",
+        "MonikaDDLC_y2":"{{i18n:Monika.Luau.y2}}",
+        "MonikaDDLC_spouse":"{{i18n:Monika.Luau.spouse.y1}}",
+        "MonikaDDLC_spouse_y2":"{{i18n:Monika.Luau.spouse.y2}}"
+      }
+    },
+
+
+
+    //月光水母之舞
+      {//第一年
+            "LogName": "Monika Moonlight Jellies Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 25 36 2",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "MainEvent_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 29 36 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//第二年
+            "LogName": "Monika Moonlight Jellies Position_y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 25 36 2",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "MainEvent_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 29 36 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//对话
+      "LogName": "Monika Moonlight Jellies Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "MonikaDDLC":"{{i18n:Monika.Moonlight.y1}}",
+        "MonikaDDLC_y2":"{{i18n:Monika.Moonlight.y2}}",
+        "MonikaDDLC_spouse":"{{i18n:Monika.Moonlight.spouse.y1}}",
+        "MonikaDDLC_spouse_y2":"{{i18n:Monika.Moonlight.spouse.y2}}"
+      }
+    },
+
+
+
+    //星露谷展览会
+      {//第一年
+            "LogName": "Monika Fair Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 50 87 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//第二年
+            "LogName": "Monika Fair Position_y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 49 89 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//对话
+      "LogName": "Monika Fair Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "MonikaDDLC":"{{i18n:Monika.Fair.y1}}",
+        "MonikaDDLC_y2":"{{i18n:Monika.Fair.y2}}",
+        "MonikaDDLC_spouse":"{{i18n:Monika.Fair.spouse.y1}}",
+        "MonikaDDLC_spouse_y2":"{{i18n:Monika.Fair.spouse.y2}}"
+      }
+    },
+
+
+
+    //万灵节
+      {//第一年
+            "LogName": "Monika Spirits' Eve Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 27 68 0",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//第二年
+            "LogName": "Monika Spirits' Eve Position_y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 31 56 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//对话
+      "LogName": "Monika Spirits' Eve Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "MonikaDDLC":"{{i18n:Monika.Eve.y1}}",
+        "MonikaDDLC_y2":"{{i18n:Monika.Eve.y2}}",
+        "MonikaDDLC_spouse":"{{i18n:Monika.Eve.spouse.y1}}",
+        "MonikaDDLC_spouse_y2":"{{i18n:Monika.Eve.spouse.y2}}"
+      }
+    },
+
+
+
+    //冰雪节
+      {//第一年
+            "LogName": "Monika Ice Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 80 33 1",
+                "Delimiter": "/"
+              },
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Main-Event_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 69 28 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//第二年
+            "LogName": "Monika Ice Position_y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 76 24 1",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//对话
+      "LogName": "Monika Ice Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "MonikaDDLC":"{{i18n:Monika.Ice.y1}}",
+        "MonikaDDLC_y2":"{{i18n:Monika.Ice.y2}}",
+        "MonikaDDLC_spouse":"{{i18n:Monika.Ice.spouse.y1}}",
+        "MonikaDDLC_spouse_y2":"{{i18n:Monika.Ice.spouse.y2}}"
+      }
+    },
+
+
+
+    //冬日星盛宴
+      {//第一年
+            "LogName": "Monika Feast Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters"
+                ],
+                "Value": "MonikaDDLC 29 61 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//第二年
+            "LogName": "Monika Feast Position_y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [
+                  "Entries",
+                  "Set-Up_additionalCharacters_y2"
+                ],
+                "Value": "MonikaDDLC 30 61 2",
+                "Delimiter": "/"
+              }
+      ]
+    },
+    {//对话
+      "LogName": "Monika Feast Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "MonikaDDLC":"{{i18n:Monika.Feast.y1}}",
+        "MonikaDDLC_y2":"{{i18n:Monika.Feast.y2}}",
+        "MonikaDDLC_spouse":"{{i18n:Monika.Feast.spouse.y1}}",
+        "MonikaDDLC_spouse_y2":"{{i18n:Monika.Feast.spouse.y2}}"
+      }
+    }
+    ]
+}
+      

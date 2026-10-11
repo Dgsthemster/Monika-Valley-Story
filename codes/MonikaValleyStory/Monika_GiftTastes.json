@@ -1,0 +1,71 @@
+{
+    "Changes":[
+      {
+			"LogName": "Monika GiftTastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": { 
+				    "MonikaDDLC": "{{i18n:giftlove}}/60 220 221 253 395/{{i18n:giftlike}}/-5 -6 -102 -103 70 122 223 552/{{i18n:giftdislike}}/-4 -14 198 202 203 204 209 212 213 214 218 219 225 226 227 228 242 265 727 728 729 730 732 733 921/{{i18n:gifthate}}/330 684 874 -20/{{i18n:giftneutral}}/151 167 798/"
+			}
+		},
+        {
+          "LogName": "Special Gift Dialogue",
+			    "Action": "EditData",
+          "Target": "Characters/Dialogue/MonikaDDLC",
+                "Entries":{
+                    "AcceptBirthdayGift_Positive": "{{i18n:BirthdayGiftPositive}}",
+                    "AcceptBirthdayGift_Negative": "{{i18n:BirthdayGiftNegative}}",
+                    //love
+                    "AcceptGift_(O)StardropTea": "{{i18n:Monika.Gift.StardropTea.0}}",//星之果茶
+                    "AcceptGift_(O)60": "{{i18n:Monika.Gift.60.{{Random: 1,2,3,4}}}}",//绿宝石(love)
+                    "AcceptGift_(O)220": "{{i18n:Monika.Gift.220.{{Random: 1,2,3,4,5}}}}",//巧克力蛋糕(love)
+                    "AcceptGift_(O)221": "{{i18n:Monika.Gift.221.{{Random: 1,2,3,4,5,6}}}}",//粉红蛋糕(love)
+                    "AcceptGift_(O)253": "{{i18n:Monika.Gift.253.{{Random: 1,2,3,4,5,6}}}}",//浓缩咖啡(love)
+                    "AcceptGift_(O)395": "{{i18n:Monika.Gift.395.{{Random: 1,2,3,4,5,6}}}}",//咖啡(love)
+                    //like
+                    "AcceptGift_(O)70": "{{i18n:Monika.Gift.70.0}}",//翡翠(like)
+                    "AcceptGift_(O)122": "{{i18n:Monika.Gift.122.0}}",//矮人电脑(like)
+                    "AcceptGift_(O)223": "{{i18n:Monika.Gift.223.0}}",//曲奇（like）
+                    "AcceptGift_(O)552": "{{i18n:Monika.Gift.552.0}}",//孔雀石(like)
+                    //neutral
+                    "AcceptGift_(O)151": "{{i18n:Monika.Gift.151.0}}",//鱿鱼(neutral)
+                    "AcceptGift_(O)167": "{{i18n:Monika.Gift.167.0}}",//Joja可乐(neutral)
+                    "AcceptGift_(O)798": "{{i18n:Monika.Gift.798.0}}",//午夜鱿鱼(neutral)
+                    //dislike
+                    "AcceptGift_(O)198": "{{i18n:Monika.Gift.Meat}}",//肉食1
+                    "AcceptGift_(O)202": "{{i18n:Monika.Gift.Meat}}",//肉食2
+                    "AcceptGift_(O)203": "{{i18n:Monika.Gift.Meat}}",//肉食3
+                    "AcceptGift_(O)204": "{{i18n:Monika.Gift.Meat}}",//肉食4
+                    "AcceptGift_(O)209": "{{i18n:Monika.Gift.Meat}}",//肉食5
+                    "AcceptGift_(O)212": "{{i18n:Monika.Gift.Meat}}",//肉食6
+                    "AcceptGift_(O)213": "{{i18n:Monika.Gift.Meat}}",//肉食7
+                    "AcceptGift_(O)214": "{{i18n:Monika.Gift.Meat}}",//肉食8
+                    "AcceptGift_(O)218": "{{i18n:Monika.Gift.Meat}}",//肉食9
+                    "AcceptGift_(O)219": "{{i18n:Monika.Gift.Meat}}",//肉食10
+                    "AcceptGift_(O)225": "{{i18n:Monika.Gift.Meat}}",//肉食11
+                    "AcceptGift_(O)226": "{{i18n:Monika.Gift.Meat}}",//肉食12
+                    "AcceptGift_(O)227": "{{i18n:Monika.Gift.Meat}}",//肉食13
+                    "AcceptGift_(O)228": "{{i18n:Monika.Gift.Meat}}",//肉食14
+                    "AcceptGift_(O)242": "{{i18n:Monika.Gift.Meat}}",//肉食15
+                    "AcceptGift_(O)265": "{{i18n:Monika.Gift.Meat}}",//肉食16
+                    "AcceptGift_(O)727": "{{i18n:Monika.Gift.Meat}}",//肉食17
+                    "AcceptGift_(O)728": "{{i18n:Monika.Gift.Meat}}",//肉食18
+                    "AcceptGift_(O)729": "{{i18n:Monika.Gift.Meat}}",//肉食19
+                    "AcceptGift_(O)730": "{{i18n:Monika.Gift.Meat}}",//肉食20
+                    "AcceptGift_(O)732": "{{i18n:Monika.Gift.Meat}}",//肉食21
+                    "AcceptGift_(O)733": "{{i18n:Monika.Gift.Meat}}",//肉食22
+                    "AcceptGift_(O)921": "{{i18n:Monika.Gift.Meat}}",//肉食23
+                    //hate
+                    "AcceptGift_(O)684": "{{i18n:Monika.Gift.Meat684}}",//虫肉
+                    "AcceptGift_(O)874": "{{i18n:Monika.Gift.Meat874}}",//虫肉块
+                    "AcceptBouquet": "{{i18n:Monika.AcceptBouquet}}",//确认恋爱关系
+                    //拒绝
+                    "RejectGift_Divorced":"{{i18n:RejectGift_Divorced}}",
+                    "RejectBouquet_VeryLowHearts":"{{i18n:RejectBouquet_VeryLowHearts}}",
+                    "RejectBouquet_LowHearts":"{{i18n:RejectBouquet_LowHearts}}",
+                    "RejectMermaidPendant_Under8Hearts":"{{i18n:RejectMermaidPendant_Under8Hearts}}",
+                    "RejectMermaidPendant_Under10Hearts":"{{i18n:RejectMermaidPendant_Under10Hearts}}"
+                }
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+  "Changes": [
+        {//PoemsAndPen材质
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/PoemsAndPen",
+            "FromFile": "assets/Items/PoemsAndPen.png" 
+        },
+        {//Pen材质
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/MonikaPen",
+            "FromFile": "assets/Items/MonikaPen.png" 
+        },
+        {//PoemsAndPen物品参数
+           "Action": "EditData",
+            "Target": "Data/Objects",
+           "Entries": {
+                "{{ModId}}.PoemsAndPen": {
+                "Name": "{{ModId}}.PoemsAndPen",
+                "Displayname": "{{i18n:object.poemsandpen.name}}",
+                "Description": "{{i18n:object.poemsandpen.description}}",
+                "Type": "Basic",
+                "Category": -26,
+                "Price": 0,
+                "CanBeGivenAsGift":false,
+                "ExcludeFromRandomSale":true,
+                "CanBeTrashed":false,
+                "ExcludeFromFishingCollection": true,
+                "ExcludeFromShippingCollection": true,
+                "Texture": "Mods\\{{ModId}}\\PoemsAndPen",
+                "SpriteIndex": 0
+               }
+            }
+        },
+        {//PoemsAndPen物品参数
+           "Action": "EditData",
+            "Target": "Data/Objects",
+           "Entries": {
+                "{{ModId}}.Pen": {
+                "Name": "{{ModId}}.Pen",
+                "Displayname": "{{i18n:object.monikapen.name}}",
+                "Description": "{{i18n:object.monikapen.description}}",
+                "Type": "Basic",
+                "Category": -26,
+                "Price": 0,
+                "CanBeGivenAsGift":false,
+                "ExcludeFromRandomSale":true,
+                "CanBeTrashed":false,
+                "ExcludeFromFishingCollection": true,
+                "ExcludeFromShippingCollection": true,
+                "Texture": "Mods\\{{ModId}}\\MonikaPen",
+                "SpriteIndex": 0
+               }
+            }
+        },
+        // add gift tastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Hate"],
+                    "Value": "{{ModId}}.PoemsAndPen",
+                    "Delimiter": " "
+                }
+            ]  
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Hate"],
+                    "Value": "{{ModId}}.Pen",
+                    "Delimiter": " "
+                }
+            ]  
+        }
+    ]
+} 

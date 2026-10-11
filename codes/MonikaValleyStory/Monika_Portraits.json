@@ -1,0 +1,164 @@
+{
+    "Changes": [
+    {//初始化
+      "LogName": "PortraitsDefault",
+      "Action": "Load",
+      "Target": "Portraits/MonikaDDLC",
+      "FromFile": "assets/Portraits/Monika_spring.png"
+    },
+    {//花舞节舞会肖像
+      "LogName": "PortraitsFlowerDanceDress",
+      "Action": "Load",
+      "Target": "Portraits/MonikaDDLC_Dance",
+      "FromFile": "assets/Portraits/Monika_Dance.png"
+    },
+    {//春
+      "LogName": "MoniSpringPortraits",
+      "Action": "EditImage",
+      "Target": "Portraits/MonikaDDLC",
+      "PatchMode": "Replace",
+      "FromFile": "assets/Portraits/Monika_spring.png",
+      "When": {
+        "Season": "spring"
+      }
+    },
+    {//夏
+      "LogName": "MoniSummerPortraits",
+      "Action": "EditImage",
+      "Target": "Portraits/MonikaDDLC",
+      "PatchMode": "Replace",
+      "FromFile": "assets/Portraits/Monika_summer.png",
+      "When": {
+        "Season": "summer"
+      }
+    },
+    {//秋
+      "LogName": "MoniFallPortraits",
+      "Action": "EditImage",
+      "Target": "Portraits/MonikaDDLC",
+      "PatchMode": "Replace",
+      "FromFile": "assets/Portraits/Monika_fall.png",
+      "When": {
+        "Season": "fall"
+      }
+    },
+    {//冬
+      "LogName": "MoniWinterPortraits",
+      "Action": "EditImage",
+      "Target": "Portraits/MonikaDDLC",
+      "PatchMode": "Replace",
+      "FromFile": "assets/Portraits/Monika_winter.png",
+      "When": {
+        "Season": "winter"
+      }
+    },
+   {//沙滩
+      "LogName": "Monika Beach Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Monika_Beach",
+      "FromFile": "assets/Portraits/Monika_Beach.png"
+    },
+    {//南岛
+      "LogName": "Monika IslandSouth Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Monika_IslandSouth",
+      "FromFile": "assets/Portraits/Monika_IslandSouth.png"
+    },
+    //画像加载
+        {//春
+          "LogName": "Monika Portraits Spring Furniture Load",
+          "Action": "Load",
+          "Target": "Mods/Monika_SpousePortrait_spring",
+          "FromFile": "assets/Portraits/Monika_SpousePortrait_spring.png"
+        },
+        {//夏
+          "LogName": "Monika Portraits Summer Furniture Load",
+          "Action": "Load",
+          "Target": "Mods/Monika_SpousePortrait_summer",
+          "FromFile": "assets/Portraits/Monika_SpousePortrait_summer.png"
+        },
+        {//秋
+          "LogName": "Monika Portraits Fall Furniture Load",
+          "Action": "Load",
+          "Target": "Mods/Monika_SpousePortrait_fall",
+          "FromFile": "assets/Portraits/Monika_SpousePortrait_fall.png"
+        },
+        {//冬
+          "LogName": "Monika Portraits Winter Furniture Load",
+          "Action": "Load",
+          "Target": "Mods/Monika_SpousePortrait_winter",
+          "FromFile": "assets/Portraits/Monika_SpousePortrait_winter.png"
+        },
+        /*{//泳装
+          "LogName": "Monika Portraits Beach Furniture Load",
+          "Action": "Load",
+          "Target": "Mods/Monika_SpousePortrait_Beach",
+          "FromFile": "assets/Portraits/Monika_SpousePortrait_Beach.png"
+        },*/
+    {//画像家具
+          "LogName": "MonikaPortraitsFurniture",
+          "Action": "EditData",
+          "Target": "Data/Furniture",
+          "Entries": {
+            "MonikaDDLC_SpousePortrait_spring": "MonikaDDLCSPspring/painting/2 2/2 2/1/30000/0/{{i18n:MonikaSPspring}}/0/Mods\\Monika_SpousePortrait_spring",
+            "MonikaDDLC_SpousePortrait_summer": "MonikaDDLCSSPsummer/painting/2 2/2 2/1/30000/0/{{i18n:MonikaSPsummer}}/0/Mods\\Monika_SpousePortrait_summer",
+            "MonikaDDLC_SpousePortrait_fall": "MonikaDDLCSPfall/painting/2 2/2 2/1/30000/0/{{i18n:MonikaSPfall}}/0/Mods\\Monika_SpousePortrait_fall",
+            "MonikaDDLC_SpousePortrait_winter": "MonikaDDLCSPwinter/painting/2 2/2 2/1/30000/0/{{i18n:MonikaSPwinter}}/0/Mods\\Monika_SpousePortrait_winter"/*,
+            "MonikaDDLC_SpousePortrait_Beach": "MonikaDDLCSPBeach/painting/2 2/2 2/1/30000/0/{{i18n:MonikaSPBeach}}/0/Mods\\Monika_SpousePortrait_Beach"*/
+          }
+        },
+      //获取方式：猪车
+      {
+          "LogName": "Monika SpousePortrait Shopping",
+          "Action": "EditData",
+          "Target": "Data/Shops",
+          "TargetField": ["Traveler","Items"],
+          "Entries": {
+             "MonikaDDLC_SpousePortrait_spring": {//春装
+              "Id": "MonikaDDLCSPspring",
+              "ItemId": "MonikaDDLC_SpousePortrait_spring",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current MonikaDDLC 14,SEASON spring,!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding"
+
+            },
+            "MonikaDDLC_SpousePortrait_summer": {//夏装
+              "Id": "MonikaDDLCSSPsummer",
+              "ItemId": "MonikaDDLC_SpousePortrait_summer",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current MonikaDDLC 14,SEASON summer,!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding"
+
+            },
+            "MonikaDDLC_SpousePortrait_fall": {//秋装
+              "Id": "MonikaDDLCSPfall",
+              "ItemId": "MonikaDDLC_SpousePortrait_fall",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current MonikaDDLC 14,SEASON fall,!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding"
+
+            },
+            "MonikaDDLC_SpousePortrait_winter": {//冬装
+              "Id": "MonikaDDLCSPwinter",
+              "ItemId": "MonikaDDLC_SpousePortrait_winter",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current MonikaDDLC 14,SEASON winter,!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding"
+
+            }/*,
+            "MonikaDDLC_SpousePortrait_Beach": {//泳装
+              "Id": "MonikaDDLCSPBeach",
+              "ItemId": "Monika_SpousePortrait_Beach",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current MonikaDDLC 14,PLAYER_VISITED_LOCATION Current IslandSouth,!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding"
+            }*/
+          }
+        }
+    ]
+}

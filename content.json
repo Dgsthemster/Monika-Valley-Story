@@ -1,0 +1,148 @@
+{
+  "Format": "2.8.0",
+  "ConfigSchema": {
+		"DatedOrMarriedOldSavings": 
+            {
+                "Description": "已恋爱/结婚的旧存档防坏结局",
+                "AllowValues": "true, false",
+                "Default": "false",
+                "AllowBlank": false
+            }
+          },
+  "Changes": [
+    //莫妮卡角色创建
+    {
+      "LogName": "Monika Character Creator",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Character.json"
+    },
+    //莫妮卡行走精灵图
+    {
+      "LogName": "Monika Sprites",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Sprites.json"
+    },
+    //莫妮卡肖像
+    {
+      "LogName": "Monika Portraits",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Portraits.json"
+    },
+    //新物品
+    {
+      "LogName": "Monika Items",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Items.json"
+    },
+    //莫妮卡对话 
+    {//初始化
+      "LogName": "MonikaDialogueDefault",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MonikaDDLC,Characters/Dialogue/MarriageDialogueMonikaDDLC",
+      "FromFile": "assets/Dialogue/blank.json"
+    },
+    {
+      "LogName": "Monika Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/MonikaDialogue.json"
+    },
+    //莫妮卡的礼物喜好和特殊对话
+    {
+      "LogName": "Monika GiftTaste",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_GiftTastes.json"
+    },
+    //莫妮卡动画
+    {
+      "LogName": "Monika Animations",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Animations.json"
+    },
+    //莫妮卡邮件
+    {
+      "LogName": "Monika Mails",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Mails.json",
+      "When": {"DatedOrMarriedOldSavings": false}
+    },
+    {
+      "LogName": "Monika Mails",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Mails2.json",
+      "When": {"DatedOrMarriedOldSavings": true}
+    },
+    //莫妮卡事件
+    /*{
+      "LogName": "Monika Events",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Events.json"
+    },*/
+    //莫妮卡日程
+    {
+      "LogName": "Monika Schedules",
+      "Action": "Load",
+      "Target": "Characters/schedules/MonikaDDLC",
+      "FromFile": "assets/Schedules/MonikaSchedules.json"
+    },
+    //莫妮卡日程对话
+    {//初始化
+      "LogName":"Default SchedulesDialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/MonikaDDLC",
+      "FromFile": "assets/Dialogue/blank.json"
+    },
+    {
+      "LogName": "Monika SchedulesDialogue",
+      "Action": "Include",
+      "FromFile":"assets/Schedules/MonikaSchedulesDialogue.json"
+    },
+    //莫妮卡婚后对话 
+    {
+      "LogName": "Monika MarriageDialogue",
+      "Action": "Include",
+      "FromFile": "assets/MarriageDialogue/MarriageDialogueMonikaDDLC.json"
+    },
+    //莫妮卡配偶露台
+    /*{   
+        "LogName":"Monika Patio",
+        "Action": "Load",
+        "Target": "Maps/MonikaSpousePatio",
+        "FromFile": "assets/Maps/MonikaSpousePatio.tmx"
+    },*/
+    //莫妮卡参与原版节日
+    {
+      "LogName": "Monika Festivals",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Festivals.json"/*,
+      "When":
+      {
+              "HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+      }*/
+    },
+    /*{//SVE节日适配
+      "LogName": "Monika SVE Festivals",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_sveFestivals.json",
+      "When":
+      {
+              "HasMod |contains= FlashShifter.StardewValleyExpandedCP": true
+      }
+    },*/
+    //莫妮卡电影
+	{
+      "LogName": "Monika Movies",
+      "Action": "Include",
+      "FromFile": "codes/MonikaValleyStory/Monika_Movies.json"
+	},
+  {//太空教室
+        "LogName": "Monika Spaceroom",
+        "Action": "Include",
+        "FromFile": "codes/MonikaValleyStory/Monika_SpaceroomLocation.json"
+    },
+  {//莫妮卡BGM
+        "LogName": "Monika BGM",
+        "Action": "Include",
+        "FromFile": "codes/MonikaValleyStory/Monika_Music.json"
+    }
+  ]
+}

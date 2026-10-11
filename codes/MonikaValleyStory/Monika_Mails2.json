@@ -1,0 +1,440 @@
+{
+    "Changes": [
+      //自定义信纸
+      {// 替换信纸5
+			"Action": "EditImage",
+			"LogName": "LetterBG1",
+			"Target": "LooseSprites/letterBG",
+			"FromFile": "assets/LooseSprites/letterBG1.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 320, "Height": 180 },
+			"ToArea": { "X": 320, "Y": 204, "Width": 320, "Height": 180 },
+			"Priority": "Late+1"
+		},
+    {// 替换信纸6
+			"Action": "EditImage",
+			"LogName": "LetterBG1",
+			"Target": "LooseSprites/letterBG",
+			"FromFile": "assets/LooseSprites/letterBG2.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 320, "Height": 180 },
+			"ToArea": { "X": 640, "Y": 204, "Width": 320, "Height": 180 },
+			"Priority": "Late+1"
+		},
+    {// 替换信纸7
+			"Action": "EditImage",
+			"LogName": "LetterBG1",
+			"Target": "LooseSprites/letterBG",
+			"FromFile": "assets/LooseSprites/letterBG3.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 320, "Height": 180 },
+			"ToArea": { "X": 960, "Y": 204, "Width": 320, "Height": 180 },
+			"Priority": "Late+1"
+		},
+        {// 占位符
+			"Action": "EditImage",
+			"LogName": "LetterBG1",
+			"Target": "LooseSprites/letterBG",
+			"FromFile": "assets/LooseSprites/letterBG1.png",
+			"FromArea": { "X": 0, "Y": 180, "Width": 24, "Height": 24 },
+			"ToArea": { "X": 72, "Y": 180, "Width": 24, "Height": 24 },
+			"Priority": "Late+1"
+		},
+        {// 占位符
+			"Action": "EditImage",
+			"LogName": "LetterBG1",
+			"Target": "LooseSprites/letterBG",
+			"FromFile": "assets/LooseSprites/letterBG1.png",
+			"FromArea": { "X": 0, "Y": 180, "Width": 24, "Height": 24 },
+			"ToArea": { "X": 96, "Y": 180, "Width": 24, "Height": 24 },
+			"Priority": "Late+1"
+		},
+        {// 替换信纸5方格
+			"Action": "EditImage",
+			"LogName": "LetterBG1",
+			"Target": "LooseSprites/letterBG",
+			"FromFile": "assets/LooseSprites/letterBG1.png",
+			"FromArea": { "X": 0, "Y": 180, "Width": 24, "Height": 24 },
+			"ToArea": { "X": 120, "Y": 180, "Width": 24, "Height": 24 },
+			"Priority": "Late+1"
+		},
+        {// 替换信纸6方格
+			"Action": "EditImage",
+			"LogName": "LetterBG1",
+			"Target": "LooseSprites/letterBG",
+			"FromFile": "assets/LooseSprites/letterBG2.png",
+			"FromArea": { "X": 0, "Y": 180, "Width": 24, "Height": 24 },
+			"ToArea": { "X": 144, "Y": 180, "Width": 24, "Height": 24 },
+			"Priority": "Late+1"
+		},
+        {//邮件内容
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+              "MonikaPoem1":"{{i18n:Mail.MonikaPoem1}}",
+              "MonikaPoem2":"{{i18n:Mail.MonikaPoem2}}",
+              "MonikaPoem3":"{{i18n:Mail.MonikaPoem3}}",
+              "MonikaPoem4":"{{i18n:Mail.MonikaPoem4}}",
+              "MonikaPoemHappyEnding":"{{i18n:Mail.MonikaPoemHappyEnding}}",
+              "MonikaPoemNeutralEnding":"{{i18n:Mail.MonikaPoemNeutralEnding}}",
+              "MonikaDating":"{{i18n:Mail.MonikaDating}}",
+              "MonikaWarning":"{{i18n:Mail.MonikaWarning}}",
+              "MonikaDivorced":"{{i18n:Mail.MonikaDivorced}}",
+              "MonikaDivorced2":"{{i18n:Mail.MonikaDivorced2}}",
+              "MonikaWarningCancelled":"{{i18n:Mail.MonikaWarningCancelled}}",
+              "MonikaMuseumJob":"{{i18n:Mail.MonikaMuseumJob}}",
+              "MonikaMuseumJobWageFirst":"{{i18n:Mail.MonikaMuseumJobWageFirst}}",
+              "MonikaMuseumJobWage":"{{i18n:Mail.MonikaMuseumJobWage}}",
+              "MonikaMuseumJobResign":"{{i18n:Mail.MonikaMuseumJobResign}}",
+              "MonikaBadEnding":"{{i18n:Mail.MonikaBadEnding}}",
+              //空触发邮件
+              "PlayerHas1Kid":" ",
+              "PlayerHas2Kid":" ",
+              "PlayerHasDivorced":" "
+              }
+        },
+        //邮件触发
+        {//2心事件
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModID}}_MonikaPoem1": {
+                "Id": "{{ModID}}_MonikaPoem1",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HEARTS Current MonikaDDLC 2",
+                "Actions": [
+                  "AddMail Current MonikaPoem1 tomorrow"
+                ]
+              }
+            }
+            },
+        {//4心事件
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModID}}_MonikaPoem2": {
+                "Id": "{{ModID}}_MonikaPoem2",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HEARTS Current MonikaDDLC 4",
+                "Actions": [
+                  "AddMail Current MonikaPoem2 tomorrow"
+                ]
+              }
+            }
+            },
+        {//6心事件
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModID}}_MonikaPoem3": {
+                "Id": "{{ModID}}_MonikaPoem3",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HEARTS Current MonikaDDLC 6",
+                "Actions": [
+                  "AddMail Current MonikaPoem3 tomorrow"
+                ]
+              }
+            }
+            },
+        {//8心事件
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModID}}_MonikaPoem4": {
+                "Id": "{{ModID}}_MonikaPoem4",
+                "Trigger": "DayEnding",
+                "Condition": "PLAYER_HEARTS Current MonikaDDLC 8",
+                "Actions": [
+                  "AddMail Current MonikaPoem4 tomorrow"
+                ]
+              }
+            }
+            },
+        {//莫妮卡定情信物
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaDating": {
+          "Id": "{{ModID}}_MonikaDating",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Dating",
+          "Actions": [
+            "AddMail Current MonikaDating tomorrow"
+            ]
+           }
+         }
+       },
+      
+       {//莫妮卡找工作
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaMuseumJob": {
+          "Id": "{{ModID}}_MonikaMuseumJob",
+          "Trigger": "DayEnding",
+          "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding, PLAYER_HEARTS Current MonikaDDLC 6",
+          "Actions": [
+            "AddMail Current MonikaMuseumJob tomorrow"
+            ]
+           }
+         }
+       },
+       {//莫妮卡初次发薪水
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaMuseumJobWageFirst": {
+          "Id": "{{ModID}}_MonikaMuseumJobWageFirst",
+          "Trigger": "DayEnding",
+          "Condition": "DAY_OF_MONTH 28, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding, PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaMuseumJob, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaMuseumJobResign",
+          "Actions": [
+            "AddMail Current MonikaMuseumJobWageFirst tomorrow"
+            ]
+           }
+         }
+        },
+        {//莫妮卡发薪水
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaMuseumJobWage": {
+          "Id": "{{ModID}}_MonikaMuseumJobWage",
+          "Trigger": "DayStarted",
+          "Condition": "DAY_OF_MONTH 28, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding, PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaMuseumJobWageFirst, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaMuseumJobResign",
+          "Actions": [
+            "AddMail Current MonikaMuseumJobWage tomorrow",
+             "MarkActionApplied Current {{ModId}}_MonikaMuseumJobWageReset false"
+            ]
+           }
+         }
+       },
+       {//莫妮卡发薪水重置(已观看)
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaMuseumJobWageReset": {
+          "Id": "{{ModID}}_MonikaMuseumJobWageReset",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL MonikaMuseumJobWage Received, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding, PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaMuseumJobWageFirst, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaMuseumJobResign",
+          "Actions": [
+            "RemoveMail Current MonikaMuseumJobWage",
+            "MarkActionApplied Current {{ModId}}_MonikaMuseumJobWage false"
+            ]
+           }
+         }
+       },
+       {//莫妮卡辞去工作
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaMuseumJobResign": {
+          "Id": "{{ModID}}_MonikaMuseumJobResign",
+          "Trigger": "DayEnding",
+          "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding, PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaMuseumJob, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Engaged",
+          "Actions": [
+            "AddMail Current MonikaMuseumJobResign tomorrow"
+            ]
+           }
+         }
+       },
+       //莫妮卡分手后保护机制
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaBreakupProtection": {
+          "Id": "{{ModID}}_MonikaBreakupProtection",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDating, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Friendly",
+          "Actions": [
+            "AddMail Current MonikaDivorced tomorrow",
+            "AddFriendshipPoints Current MonikaDDLC -2000",
+            "SetNpcInvisible MonikaDDLC 9999"
+            ]
+           }
+         }
+       },
+       //莫妮卡离婚诀别信
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModID}}_MonikaDivorced": {
+                "Id": "{{ModID}}_MonikaDivorced",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorcedDetect, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Divorced",
+                "Actions": [
+                  "AddMail Current MonikaDivorced now",
+                  "AddFriendshipPoints Current MonikaDDLC -3500",
+                  "SetNpcInvisible MonikaDDLC 9999"
+                ]
+              }
+            }
+        },
+      //孩子保护机制
+      {//1孩检测
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_PlayerHas1Kid": {
+          "Id": "{{ModID}}_PlayerHas1Kid",
+          "Trigger": "DayStarted",
+          "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PlayerHas2Kid, PLAYER_HAS_CHILDREN Current 1 1, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+          "Actions": [
+            "AddMail Current PlayerHas1Kid received"
+            ]
+           }
+         }
+      },
+      {//2孩检测
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_PlayerHas2Kid": {
+          "Id": "{{ModID}}_PlayerHas2Kid",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_CHILDREN Current 2 2, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+          "Actions": [
+            "AddMail Current PlayerHas2Kid received",
+            "RemoveMail Current PlayerHas1Kid",
+            "MarkActionApplied Current {{ModId}}_PlayerHas1Kid false"
+            ]
+           }
+         }
+      },
+      {//1孩献祭
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaDivorced1Kid": {
+          "Id": "{{ModID}}_MonikaDivorced1Kid",
+          "Trigger": "DayEnding",
+          "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorcedDetect, PLAYER_HAS_MAIL Current PlayerHas1Kid Received, PLAYER_HAS_CHILDREN Current 0 0, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+          "Actions": [
+            "AddMail Current MonikaDivorced2 tomorrow",
+            "SetNpcInvisible MonikaDDLC 9999"
+            ]
+           }
+         }
+      },
+      {//2孩献祭
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaDivorced2Kid": {
+          "Id": "{{ModID}}_MonikaDivorced2Kid",
+          "Trigger": "DayEnding",
+          "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorcedDetect, PLAYER_HAS_MAIL Current PlayerHas2Kid Received, !PLAYER_HAS_CHILDREN Current 2 2, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+          "Actions": [
+            "AddMail Current MonikaDivorced2 tomorrow",
+            "SetNpcInvisible MonikaDDLC 9999"
+            ]
+           }
+         }
+      },
+      //婚后0心警告事件
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaWarning": {
+          "Id": "{{ModID}}_MonikaWarning",
+          "Trigger": "DayEnding",
+          "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorcedDetect, PLAYER_HEARTS Current MonikaDDLC 0 1, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+          "Actions": [
+            "AddMail Current MonikaWarning tomorrow",
+            "RemoveMail Current MonikaWarningCancelled",
+            "MarkActionApplied Current {{ModId}}_MonikaWarningCancelled false"
+            ]
+           }
+         }
+      },
+       //婚后0心警告取消
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaWarningCancelled": {
+          "Id": "{{ModID}}_MonikaWarningCancelled",
+          "Trigger": "DayEnding",
+          "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorcedDetect, PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaWarning, PLAYER_HEARTS Current MonikaDDLC 4 14, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+          "Actions": [
+            "AddMail Current MonikaWarningCancelled tomorrow",
+            "RemoveMail Current MonikaWarning",
+            "MarkActionApplied Current {{ModId}}_MonikaWarning false"
+            ]
+           }
+         }
+      },
+      //莫妮卡警告后离婚事件
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaDivorcing": {
+          "Id": "{{ModID}}_MonikaDivorcing",
+          "Trigger": "DayEnding",
+          "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorcedDetect, PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaWarning, PLAYER_FRIENDSHIP_POINTS Current MonikaDDLC 0 150, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+          "Actions": [
+            "AddMail Current MonikaDivorced tomorrow",
+            "SetNpcInvisible MonikaDDLC 9999"
+            ]
+           }
+         }
+      },
+      //莫妮卡离婚检测
+      {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MonikaDivorcedDetect": {
+          "Id": "{{ModID}}_MonikaDivorcedDetect",
+          "Trigger": "DayStarted",
+          "Condition": "ANY \"PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorced\" \"PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorcing\" \"PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorced1Kid\" \"PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorced2Kid\"",
+          "Actions": [
+            "AddMail Current PlayerHasDivorced received"
+            ]
+           }
+         }
+      },
+      {//莫妮卡好结局
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModID}}_MonikaHappyEnding": {
+                "Id": "{{ModID}}_MonikaHappyEnding",
+                "Trigger": "DayEnding",
+                "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding, PLAYER_VISITED_LOCATION Current Summit, PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+                "Actions": [
+                  "AddMail Current MonikaPoemHappyEnding tomorrow"
+                ]
+              }
+            }
+      },
+      {//莫妮卡中性结局
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModID}}_MonikaNeutralEnding": {
+                "Id": "{{ModID}}_MonikaNeutralEnding",
+                "Trigger": "DayEnding",
+                "Condition": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding, PLAYER_VISITED_LOCATION Current Summit, !PLAYER_NPC_RELATIONSHIP Current MonikaDDLC Married",
+                "Actions": [
+                  "AddMail Current MonikaPoemNeutralEnding tomorrow"
+                ]
+              }
+            }
+      },
+      {//莫妮卡坏结局
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModID}}_MonikaBadEnding": {
+                "Id": "{{ModID}}_MonikaBadEnding",
+                "Trigger": "DayEnding",
+                "Condition": "ANY \"PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaDivorcedDetect\" \"PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBreakupProtection\"",
+                "Actions": [
+                  "AddMail Current MonikaBadEnding tomorrow"
+                ]
+              }
+            }
+      }
+      ]
+}

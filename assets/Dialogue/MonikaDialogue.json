@@ -1,0 +1,178 @@
+{
+    "Changes": [
+       {
+      "LogName": "Monika Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "MonikaDDLC": "{{i18n:MonikaRainy}}"
+      }
+    },
+    {
+      "LogName": "MonikaDialogueLoad",
+      "Action": "Editdata",
+      "Target": "Characters/Dialogue/MonikaDDLC",
+      "Entries": {
+        "Introduction":"{{i18n:intro}}",//初始介绍
+        "intro_Monika_followup":"{{i18n:intro_Monika_followup}}",
+        "intro_Monika_silence":"{{i18n:intro_Monika_silence}}",
+        "intro_Monika_love":"{{i18n:intro_Monika_love}}",
+        "MovieInvitation": "{{i18n:MovieInvitation}}",
+        "GreenRain": "{{i18n:GreenRain}}",
+        "GreenRainFinished": "{{i18n:GreenRainFinished}}",
+        "GreenRain_2": "{{i18n:GreenRain2}}",
+        "DumpsterDiveComment": "{{i18n:DumpsterDiveComment}}",
+        "HitBySlingshot": "{{i18n:HitBySlingshot}}",
+        "divorced": "{{i18n:divorced}}",
+        "dumped_Girls": "{{i18n:dumped}}",
+        "breakUp": "{{i18n:breakUp}}",
+        "secondChance_Girls": "{{i18n:secondChance}}",
+        "WipedMemory": "{{i18n:WipedMemory}}",
+        //Mon
+        "Mon": "{{i18n:Mon.1}}",
+        "Mon2": "{{i18n:Mon2.1}}",
+        "Mon4": "{{i18n:Mon4.1}}",
+        "Mon6": "{{i18n:Mon6.1}}",
+        "Mon8": "{{i18n:Mon8.1}}",
+        "Mon10": "{{i18n:Mon10.1}}",
+        //Tue
+        "Tue": "{{i18n:Tue.1}}",
+        "Tue2": "{{i18n:Tue2.1}}",
+        "Tue4": "{{i18n:Tue4.1}}",
+        "Tue6": "{{i18n:Tue6.1}}",
+        "Tue8": "{{i18n:Tue8.1}}",
+        //Wed
+        "Wed": "{{i18n:Wed.1}}",
+        "Wed4": "{{i18n:Wed4.1}}",
+        "Wed6": "{{i18n:Wed6.1}}",
+        "Wed10": "{{i18n:Wed10.1}}",
+        //Thu
+        "Thu2": "{{i18n:Thu2.1}}",
+        "Thu4": "{{i18n:Thu4.1}}",
+        "Thu8": "{{i18n:Thu8.1}}",
+        "Thu10": "{{i18n:Thu10.1}}",
+        //Fri
+        "Fri": "{{i18n:Fri.1}}",
+        "Fri2": "{{i18n:Fri2.1}}",
+        "Fri4": "{{i18n:Fri4.1}}",
+        "Fri6": "{{i18n:Fri6.1}}",
+        "Fri10": "{{i18n:Fri10.1}}",
+        //Sat
+        "Sat": "{{i18n:Sat.1}}",
+        "Sat2": "{{i18n:Sat2.1}}",
+        "Sat6": "{{i18n:Sat6.1}}",
+        "Sat10": "{{i18n:Sat10.1}}",
+        //Sun
+        "Sun": "{{i18n:Sun.1}}",
+        "Sun2": "{{i18n:Sun2.1}}",
+        "Sun4": "{{i18n:Sun4.1}}",
+        "Sun6": "{{i18n:Sun6.1}}",
+        "Sun8": "{{i18n:Sun8.1}}",
+        //Spring
+        "spring_Mon": "{{i18n:springMon.1}}",
+        "spring_Tue8": "{{i18n:springTue8.1}}",
+        "spring_Wed": "{{i18n:springWed.1}}",
+        "spring_Thu": "{{i18n:springThu.1}}",
+        "spring_Fri": "{{i18n:springFri.1}}",
+        "spring_Sat": "{{i18n:springSat.1}}",
+        "spring_Sun": "{{i18n:springSun.1}}",
+        "spring_24_1":"{{i18n:spring_24_1}}",
+        "spring_24_2": "{{i18n:spring_24_2}}",
+        "spring_1_2": "{{i18n:spring_1_2}}",//新年对话
+        "spring_2_2": "{{i18n:spring_2_2}}",
+        //Summer
+        "summer_1_*": "{{i18n:summer_1}}",
+        "summer_Tue": "{{i18n:summerTue.1}}",
+        "summer_Wed": "{{i18n:summerWed.1}}",
+        "summer_Thu": "{{i18n:summerThu.1}}",
+        "summer_Sat": "{{i18n:summerSat.1}}",
+        "summer_Sun": "{{i18n:summerSun.1}}",
+        //Fall
+        "fall_Mon": "{{i18n:fallMon.1}}",
+        "fall_Tue": "{{i18n:fallTue.1}}",
+        "fall_Wed": "{{i18n:fallWed.1}}",
+        "fall_Thu": "{{i18n:fallThu.1}}",
+        "fall_Fri": "{{i18n:fallFri.1}}",
+        "fall_Sat": "{{i18n:fallSat.1}}",
+        "fall_Sun": "{{i18n:fallSun.1}}",
+        //Winter
+        "winter_Mon": "{{i18n:winterMon.1}}",
+        "winter_Tue": "{{i18n:winterTue.1}}",
+        "winter_Wed4": "{{i18n:winterWed4.1}}",
+        "winter_Thu": "{{i18n:winterThu.1}}",
+        "winter_Fri": "{{i18n:winterFri.1}}",
+        "winter_Sat": "{{i18n:winterSat.1}}",
+        "winter_Sun": "{{i18n:winterSun.1}}",
+        //花舞节
+        "FlowerDance_Accept": "{{i18n:Monika.FlowerDance_Accept}}",
+        "FlowerDance_Accept_Spouse": "{{i18n:Monika.FlowerDance_Accept_Spouse}}",
+        "FlowerDance_Decline": "{{i18n:Monika.FlowerDance_Decline}}",
+        //姜岛
+        "Resort_Entering": "{{i18n:Monika.Resort_Entering}}",
+	      "Resort_Leaving": "{{i18n:Monika.Resort_Leaving}}",
+	      "Resort_Shore": "{{i18n:Monika.Resort_Shore}}",
+	      "Resort_Shore_2": "{{i18n:Monika.Resort_Shore_2}}",
+	      "Resort_Umbrella": "{{i18n:Monika.Resort_Umbrella}}",
+	      "Resort_Umbrella_2": "{{i18n:Monika.Resort_Umbrella_2}}",
+	      "Resort_Wander": "{{i18n:Monika.Resort_Wander}}",
+	      "Resort_Bar": "{{i18n:Monika.Resort_Bar}}",
+	      "Resort": "{{i18n:Monika.Resort}}",
+        //冬日星盛宴
+        "WinterStar_GiveGift_Before_Spouse":"{{i18n:WinterStar_GiveGift_Before_Spouse}}",
+        "WinterStar_GiveGift_Before":"{{i18n:WinterStar_GiveGift_Before}}",
+        //其他对话
+        "SpouseFarmhouseClutter": "{{i18n:Monika.SpouseFarmhouseClutter}}",
+        "Spouse_MonstersInHouse": "{{i18n:Monika.Spouse_MonstersInHouse}}",
+        "SpouseStardrop": "{{i18n:Monika.SpouseStardrop}}",
+        "SpouseGiftJealous":"{{i18n:Monika.SpouseGiftJealous}}",
+        "Monika_Good5_followup":"{{i18n:Monika_Good5_followup}}",
+        "Monika_Good5_1":"{{i18n:Monika_Good5_1}}",
+        "Monika_Good5_2":"{{i18n:Monika_Good5_2}}"
+    }
+    },
+      {
+      "LogName": "MonikaSummitEvent",
+      "Action": "Editdata",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+        "SummitEvent_Dialogue3_MonikaDDLC": "{{i18n:SummitEvent_Dialogue3_MonikaDDLC}}"
+      }
+      },
+    {
+      "LogName": "周四适应线（仅第一年）",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MonikaDDLC",
+      "When": { "Year": "1" },
+      "Entries": {
+        "Thu": "{{i18n:Thu.1}}"
+      }
+    },
+    {
+      "LogName": "周六组织者线（仅第一年）",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MonikaDDLC",
+      "When": { "Year": "1" },
+      "Entries": {
+        "Sat4": "{{i18n:Sat4.1}}"
+      }
+    },
+    {
+      "LogName": "周三游戏机制梗（仅友达期）",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MonikaDDLC",
+      "When": { "Relationship:MonikaDDLC": "Friendly" },
+      "Entries": {
+        "Wed2": "{{i18n:Wed2.1}}"
+      }
+    },
+    {
+      "LogName": "夏日周年线（第二年起）",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MonikaDDLC",
+      "When": { "Year": "2, ∞" },
+      "Entries": {
+        "summer_Fri": "{{i18n:summerFri.1}}"
+      }
+    }
+    ]
+  }

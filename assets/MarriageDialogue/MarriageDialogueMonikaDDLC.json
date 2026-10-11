@@ -1,0 +1,152 @@
+{
+     "Changes": [
+    {
+      "LogName": "MonikaDialogueLoad",
+      "Action": "Editdata",
+      "Target": "Characters/Dialogue/MarriageDialogueMonikaDDLC",
+      "Entries": {
+        //一般对话
+        "funLeave_MonikaDDLC": "{{i18n:funLeave_MonikaDDLC}}" ,
+        "funReturn_MonikaDDLC": "{{i18n:funReturn_MonikaDDLC}}" ,
+        //露台对话
+        "patio_MonikaDDLC":"{{i18n:Monika.Patio.{{Random: 1,2,3,4,5}}}}",
+        //无床对话
+        "NoBed_0": "{{i18n:Monika.Nobed.0}}",
+        "NoBed_1": "{{i18n:Monika.Nobed.1}}",
+        "NoBed_2": "{{i18n:Monika.Nobed.2}}",
+        "NoBed_3": "{{i18n:Monika.Nobed.3}}",
+        //白天雨天对话
+        "Rainy_Day_0": "{{i18n:Monika.Rainy.Day.0.{{Random: 1,2,3,4,5}}}}",
+        "Rainy_Day_1": "{{i18n:Monika.Rainy.Day.1.{{Random: 1,2,3,4,5}}}}",
+        "Rainy_Day_2": "{{i18n:Monika.Rainy.Day.2.{{Random: 1,2,3,4,5}}}}",
+        "Rainy_Day_3": "{{i18n:Monika.Rainy.Day.3.{{Random: 1,2,3,4,5}}}}",
+        "Rainy_Day_4": "{{i18n:Monika.Rainy.Day.4.{{Random: 1,2,3,4,5}}}}",
+        //雨夜对话
+        "Rainy_Night_0": "{{i18n:Monika.Rainy.Night.0.{{Random: 1,2,3,4,5}}}}",
+        "Rainy_Night_1": "{{i18n:Monika.Rainy.Night.1.{{Random: 1,2,3,4,5}}}}",
+        "Rainy_Night_2": "{{i18n:Monika.Rainy.Night.2.{{Random: 1,2,3,4,5}}}}",
+        "Rainy_Night_3": "{{i18n:Monika.Rainy.Night.3.{{Random: 1,2,3,4,5}}}}",
+        "Rainy_Night_4": "{{i18n:Monika.Rainy.Night.4.{{Random: 1,2,3,4,5}}}}",
+        //室内白天对话
+        "Indoor_Day_0": "{{i18n:Monika.Indoor.Day.0.{{Random: 1,2,3,4,5}}}}",
+        "Indoor_Day_1": "{{i18n:Monika.Indoor.Day.1.{{Random: 1,2,3,4,5}}}}",
+        "Indoor_Day_2": "{{i18n:Monika.Indoor.Day.2.{{Random: 1,2,3,4,5}}}}",
+        "Indoor_Day_3": "{{i18n:Monika.Indoor.Day.3.{{Random: 1,2,3,4,5}}}}",
+        "Indoor_Day_4": "{{i18n:Monika.Indoor.Day.4.{{Random: 1,2,3,4,5}}}}",
+        //室内夜晚对话
+        "Indoor_Night_0": "{{i18n:Monika.Indoor.Night.0.{{Random: 1,2,3,4,5}}}}",
+        "Indoor_Night_1": "{{i18n:Monika.Indoor.Night.1.{{Random: 1,2,3,4,5}}}}",
+        "Indoor_Night_2": "{{i18n:Monika.Indoor.Night.2.{{Random: 1,2,3,4,5}}}}",
+        "Indoor_Night_3": "{{i18n:Monika.Indoor.Night.3.{{Random: 1,2,3,4,5}}}}",
+        "Indoor_Night_4": "{{i18n:Monika.Indoor.Night.4.{{Random: 1,2,3,4,5}}}}",
+        //室外对话
+        "Outdoor_0": "{{i18n:Monika.Outdoor.0.{{Random: 1,2,3,4,5}}}}",
+        "Outdoor_1": "{{i18n:Monika.Outdoor.1.{{Random: 1,2,3,4,5}}}}",
+        "Outdoor_2": "{{i18n:Monika.Outdoor.2.{{Random: 1,2,3,4,5}}}}",
+        "Outdoor_3": "{{i18n:Monika.Outdoor.3.{{Random: 1,2,3,4,5}}}}",
+        "Outdoor_4": "{{i18n:Monika.Outdoor.4.{{Random: 1,2,3,4,5}}}}",
+        //孩子对话
+        "OneKid_0": "{{i18n:Monika.OneKid.0}}",
+        "OneKid_1": "{{i18n:Monika.OneKid.1}}",
+        "OneKid_2": "{{i18n:Monika.OneKid.2}}",
+        "OneKid_3": "{{i18n:Monika.OneKid.3}}",
+        "OneKid_4": "{{i18n:Monika.OneKid.4}}",
+        "TwoKids_0": "{{i18n:Monika.TwoKids.0}}",
+        "TwoKids_1": "{{i18n:Monika.TwoKids.1}}",
+        "TwoKids_2": "{{i18n:Monika.TwoKids.2}}",
+        "TwoKids_3": "{{i18n:Monika.TwoKids.3}}",
+        "TwoKids_4": "{{i18n:Monika.TwoKids.4}}",
+        //配偶房间对话
+        "spouseRoom_MonikaDDLC": "{{i18n:Monika.spouseRoom.{{Random: 1,2,3,4,5}}}}",
+        //节日对话
+        "spring_1": "{{i18n:Monika.spring_1}}",//新年
+        "spring_24": "{{i18n:Monika.spring_24}}",//花舞节
+        "winter_25": "{{i18n:Monika.winter_25.{{Random: 1,2,3,4,5}}}}",//圣诞节(冬日星盛宴)
+        "winter_28": "{{i18n:Monika.winter_28}}",//除夕
+        //好感对话
+        "Good_0":"{{i18n:Monika.Good_0}}",
+        "Good_1":"{{i18n:Monika.Good_1}}",
+        "Good_2":"{{i18n:Monika.Good_2}}",
+        "Good_3":"{{i18n:Monika.Good_3}}",
+        "Good_4":"{{i18n:Monika.Good_4}}",
+        "Good_5":"{{i18n:Monika.Good_5}}",
+        "Neutral_0":"{{i18n:Monika.Neutral_0}}",
+        "Neutral_1":"{{i18n:Monika.Neutral_1}}",
+        "Neutral_2":"{{i18n:Monika.Neutral_2}}",
+        "Neutral_3":"{{i18n:Monika.Neutral_3}}",
+        "Neutral_4":"{{i18n:Monika.Neutral_4}}",
+        "Neutral_5":"{{i18n:Monika.Neutral_5}}",
+        "Neutral_6":"{{i18n:Monika.Neutral_6}}",
+        "Bad_0":"{{i18n:Monika.Bad_0}}",
+        "Bad_1":"{{i18n:Monika.Bad_1}}",
+        "Bad_2":"{{i18n:Monika.Bad_2}}",
+        "Bad_3":"{{i18n:Monika.Bad_3}}",
+        "Bad_4":"{{i18n:Monika.Bad_4}}",
+        "Bad_5":"{{i18n:Monika.Bad_5}}",
+        "Bad_6":"{{i18n:Monika.Bad_6}}",
+        "Bad_7":"{{i18n:Monika.Bad_7}}"
+}
+    },
+    {
+      "LogName": "EngagementMonika",
+      "Action": "Editdata",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "MonikaDDLC0": "{{i18n:MonikaDDLC0}}",
+        "MonikaDDLC1": "{{i18n:MonikaDDLC1}}"
+        }
+      },
+      {
+			"LogName": "EngageMonika",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": { 
+			"MonikaDDLC_AfterWedding":"{{i18n:MonikaDDLC_AfterWedding}}",
+      "MonikaDDLC_Engaged":"{{i18n:MonikaDDLC_Engaged}}"
+			}
+		},
+    	{
+	    "LogName": "Spouse Movie Invitation",
+	    "Action": "EditData",
+	    "Target": "Strings/Characters",
+	    "Entries": {
+		  "MovieInvite_Spouse_MonikaDDLC": "{{i18n:MovieInvite_Spouse_MonikaDDLC}}"
+			}
+	},
+    {
+      "LogName": "Spouse Locations",
+      "Action": "EditData",
+			"Target": "Strings/Locations",
+			"When": {
+				"Relationship:MonikaDDLC": "Married"
+			},
+			"Entries": { 
+				"FarmHouse_SpouseAttacked1": "{{i18n:MonikaAttack.1}}",
+        "FarmHouse_SpouseAttacked2": "{{i18n:MonikaAttack.2}}",
+        "FarmHouse_SpouseAttacked3": "{{i18n:MonikaAttack.3}}",
+        "FarmHouse_SpouseAttacked4": "{{i18n:MonikaAttack.4}}",
+        "FarmHouse_SpouseAttacked5": "{{i18n:MonikaAttack.5}}",
+        "FarmHouse_SpouseAttacked6": "{{i18n:MonikaAttack.6}}",
+        "FarmHouse_SpouseAttacked7": "{{i18n:MonikaAttack.7}}",
+        "FarmHouse_SpouseAttacked8": "{{i18n:MonikaAttack.8}}",
+        "FarmHouse_SpouseAttacked9": "{{i18n:MonikaAttack.9}}",
+        "FarmHouse_SpouseAttacked10": "{{i18n:MonikaAttack.10}}",
+        "FarmHouse_SpouseAttacked11": "{{i18n:MonikaAttack.11}}",
+        "FarmHouse_SpouseAttacked12": "{{i18n:MonikaAttack.12}}",
+        "FarmHouse_Bed_GoToSleep": "{{i18n:MonikaGoodNight}}" 
+			}
+    },
+    {
+      "LogName": "Spouse Wedding",
+      "Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"When": {
+				"Relationship:MonikaDDLC": "Married"
+			},
+			"Entries": { 
+				"Utility.cs.5367":"{{i18n:WeddingMale}}",
+        "Utility.cs.5369":"{{i18n:WeddingFemale}}"
+			}
+    }
+]
+}

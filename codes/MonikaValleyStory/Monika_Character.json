@@ -1,0 +1,97 @@
+{
+"Changes": [
+    {
+      "LogName": "Monika Create",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "MonikaDDLC": {//人物信息
+          "DisplayName": "{{i18n:MonikaDDLC}}",
+          "BirthSeason": "summer",
+          "BirthDay": 22,
+          "HomeRegion": "Town",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": true,
+          "LoveInterest": "",
+          "Calendar": "AlwaysShown",
+          "SocialTab": "UnknownUntilMet",
+          "SpouseWantsChildren": true, 
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange":0,
+          "CanVisitIsland":"!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding",
+          "ExcludeFromIntroductionsQuest": false,
+          "DumpsterDiveEmote":28,
+          "DumpsterDiveFriendshipEffect":0,
+          "EndSlideShow": 1,
+          "FriendsAndFamily": {},
+          "UnlockConditions": "!PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_MonikaBadEnding",
+          "SpawnIfMissing": true,
+          "FlowerDanceCanDance":true,
+          "WinterStarParticipant":true,
+          "WinterStarGifts":[
+            {
+              "Id": "Tea Set",
+              "ItemId": "(O)341"
+            }
+          ],
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "MonikaSpaceroom",
+              "Tile": {
+                "X": 25,
+                "Y": 15
+              },
+              "Direction": "down"
+            }
+          ],
+           "SpouseRoom": {
+                "MapAsset": "MonikaSpouseRoom",
+                "MapSourceRect": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 6,
+                    "Height": 9
+                }
+            },
+          /*"SpousePatio": {
+              "MapAsset": "MonikaSpousePatio",
+              "MapSourceRect": {
+                  "X": 0,
+                  "Y": 0,
+                  "Width": 4,
+                  "Height": 4
+                }
+            },*/
+          "TextureName": null,
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+          "HiddenProfileEmoteSound": null,
+          "HiddenProfileEmoteDuration": -1,
+          "HiddenProfileEmoteStartFrame": 16,
+          "HiddenProfileEmoteFrameCount": 4,
+          "HiddenProfileEmoteFrameDuration": 200.0,
+          "FestivalVanillaActorIndex": 35,
+          "Appearance": [
+            {
+              "Id": "FlowerDanceDress",
+              "Condition": "ANY \"LOCATION_NAME Here Forest-FlowerFestival\" \"SEASON spring, DAY_OF_MONTH 24, TIME 900 1400\"",
+              "Sprite": "Characters/MonikaDDLC_Dance",
+              "Portrait": "Portraits/MonikaDDLC_Dance"
+            }
+          ],
+          "CustomFields": {}
+        }
+      }
+    }
+]
+}

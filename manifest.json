@@ -1,0 +1,16 @@
+{
+  "name": "Monika Valley Story",
+  "Author": "DGRS",
+  "version": "0.0.2",
+  "description": "This is Monika from Doki Doki Literature Club.Let's run a farm that belongs to just the two of us",
+  "UniqueID": "DGRS.MonikaValleyStory",
+  "MinimumApiVersion": "2.0",
+  // "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.8.0"
+  }
+
+  //Disclaimer:This mod is a non-commercial fan project. Monika and all related characters are the intellectual property of *Team Salvato*, creators of *Doki Doki Literature Club!*. This mod is not affiliated with or endorsed by Team Salvato in any way.
+
+}

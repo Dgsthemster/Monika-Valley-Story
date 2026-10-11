@@ -1,0 +1,60 @@
+{
+    "Changes": [
+    {//初始化
+      "LogName": "SpritesDefault",
+      "Action": "Load",
+      "Target": "Characters/MonikaDDLC",
+      "FromFile": "assets/Sprites/Monika_spring.png"
+    },
+    {//花舞节舞裙外观
+      "LogName": "SpritesFlowerDanceDress",
+      "Action": "Load",
+      "Target": "Characters/MonikaDDLC_Dance",
+      "FromFile": "assets/Sprites/Monika_Dance.png"
+    },
+    {//春
+      "Action": "EditImage",
+      "Target": "Characters/MonikaDDLC",
+      "PatchMode": "Replace",
+      "FromFile": "assets/Sprites/Monika_spring.png",
+      "When": { 
+        "Season": "spring" 
+      }
+    },
+    {//夏
+      "Action": "EditImage",
+      "Target": "Characters/MonikaDDLC",
+      "PatchMode": "Replace",
+      "FromFile": "assets/Sprites/Monika_summer.png",
+      "When": { 
+        "Season": "summer" 
+    }
+    },
+    {//秋
+      "Action": "EditImage",
+      "Target": "Characters/MonikaDDLC",
+      "PatchMode": "Replace",
+      "FromFile": "assets/Sprites/Monika_fall.png",
+      "When": { 
+        "Season": "fall" 
+    }
+    },
+    {//冬
+      "Action": "EditImage",
+      "Target": "Characters/MonikaDDLC",
+      "PatchMode": "Replace",
+      "FromFile": "assets/Sprites/Monika_winter.png",
+      "When": { 
+        "Season": "winter" 
+    }
+    }
+    /*
+    {//沙滩，预计beta或正式版加入
+      "LogName": "Monika Beach Sprites",
+      "Action": "Load",
+      "Target": "Characters/Monika_Beach",
+      "FromFile": "assets/Sprites/Monika_Beach.png",
+    },
+    */
+    ]
+}

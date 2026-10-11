@@ -1,0 +1,53 @@
+{
+    "Changes": [
+  {//2心事件
+	"LogName": "Monika Event 2Heart",
+	"Action": "EditData",
+	"Target": "Data/Events/Backwoods",
+	"Entries": {
+	  "29109958801/f MonikaDDLC 500": ""
+	}
+},
+{//4心事件
+	"LogName": "Monika Event 4Heart",
+	"Action": "EditData",
+	"Target": "Data/Events/Backwoods",
+	"Entries": {
+	  "29109958802/f MonikaDDLC 1000": ""
+	}
+},
+{//6心事件
+	"LogName": "Monika Event 6Heart",
+	"Action": "EditData",
+	"Target": "Data/Events/Backwoods",
+	"Entries": {
+	  "29109958803/f MonikaDDLC 1500": ""
+	}
+},
+{//8心事件
+	"LogName": "Monika Event 8Heart",
+	"Action": "EditData",
+	"Target": "Data/Events/Backwoods",
+	"Entries": {
+	  "29109958804/f MonikaDDLC 2000/D MonikaDDLC/t 触发时间/w 天气/d 排除日期/G !IS_FESTIVAL_TODAY SquidFest/F": ""
+	}
+},
+{//10心事件
+	"LogName": "Monika Event 10Heart",
+	"Action": "EditData",
+	"Target": "Data/Events/Backwoods",
+	"Entries": {
+	  "29109958805/f MonikaDDLC 2500": ""
+	}
+},
+{//14心事件
+	"LogName": "Monika Event 14Heart",
+	"Action": "EditData",
+	"Target": "Data/Events/FarmHouse",
+	"Entries": {
+	  "29109958806/f MonikaDDLC 3500": ""
+	}
+}
+      ]
+}
+      

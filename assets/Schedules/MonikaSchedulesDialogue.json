@@ -1,0 +1,12 @@
+{
+    "Changes": [
+  {
+    "LogName":"行程对话",
+    "Action": "EditData",
+    "Target": "Strings/schedules/MonikaDDLC",
+    "Entries": {
+    "Beach.000":"{{i18n:Beach.000}}"
+}
+  }
+    ]
+}
