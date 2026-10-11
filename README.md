@@ -14,6 +14,12 @@
 
 ---
 
+<div align="center">
+
+<img src="docs/steam-header-small.png" width="100%" alt="Monika Valley Story">
+
+</div>
+
 ## 模组介绍 / Description
 
 **中文**
